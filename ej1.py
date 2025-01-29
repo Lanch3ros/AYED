@@ -17,35 +17,20 @@ Dada una cadena S, compuesta por caracteres :
         7 -> 6
         e -> 8
 '''
+casos_de_prueba = ["anitalavalatina", "ricardo01", "123456777777", "elementaleeeeergo"]
 
-def caracter_mas_repetido(cadena):
-    # Inicializar un diccionario vacío
+def c_mas_repetido(cadena):
     repeticiones = {}
-
-    # Recorrer cada caracter de la cadena
     for caracter in cadena:
-        # Si el caracter ya está en el diccionario, incrementar su conteo
         if caracter in repeticiones:
             repeticiones[caracter] += 1
-        # Si el caracter no está en el diccionario, agregarlo con un conteo de 1
         else:
             repeticiones[caracter] = 1
+    c_mas_repetido = max(repeticiones, key=repeticiones.get)
+    return c_mas_repetido, repeticiones[c_mas_repetido]
+def resultado ():
+    for caso in casos_de_prueba:
+        caracter, repeticiones = c_mas_repetido(caso)
+        print(f"{caracter} -> {repeticiones}")
 
-    # Encontrar el caracter con el mayor número de repeticiones
-    caracter_mas_repetido = max(repeticiones, key=repeticiones.get)
-
-    # Devolver el caracter y su número de repeticiones
-    return caracter_mas_repetido, repeticiones[caracter_mas_repetido]
-
-
-# Casos de prueba
-casos_de_prueba = [
-    "anitalavalatina",
-    "ricardo01",
-    "123456777777",
-    "elementaleeeeergo"
-]
-
-for caso in casos_de_prueba:
-    caracter, repeticiones = caracter_mas_repetido(caso)
-    print(f"{caracter} -> {repeticiones}")
+resultado ()
