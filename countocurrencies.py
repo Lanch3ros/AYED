@@ -28,9 +28,10 @@ def c_mas_repetido(cadena):
             repeticiones[caracter] = 1
     c_mas_repetido = max(repeticiones, key=repeticiones.get)
     return c_mas_repetido, repeticiones[c_mas_repetido]
+    
 def resultado ():
     for caso in casos_de_prueba:
         caracter, repeticiones = c_mas_repetido(caso)
-        print(f"{caracter} -> {repeticiones}")
+        print(f"\n{caracter} ---> {repeticiones}")
 
 resultado ()
