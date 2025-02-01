@@ -1,3 +1,20 @@
+'''
+Estudiante: LANCHEROS AYORA JOSÉ LUIS
+
+Determinar si una cadena S es un palindromo, un palindromo es aquella sucesión de caracteres en donde ci = cn-i para todo i > 0
+input: 
+              anitalavalatina
+              ernesto
+              a
+              abalorio 
+         
+output: 
+             True
+             False
+             True
+             False
+'''
+
 def es_palindromo(s):
     inicio = 0
     fin = len(s) - 1
