@@ -1,4 +1,6 @@
 '''
+Estudiante: LANCHEROS AYORA JOSÉ LUIS
+
 Dada una cadena S, compuesta por caracteres :
                   c0, c1, c2 ...... cn
         Determinar aquel caracter ci el cual tiene el mayor número de repeticiones ( No necesariamente contiguas) dentro de S
