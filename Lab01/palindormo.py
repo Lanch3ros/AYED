@@ -30,3 +30,4 @@ print(es_palindromo("anitalavalatina"))
 print(es_palindromo("ernesto"))
 print(es_palindromo("a"))
 print(es_palindromo("abalorio"))
+
