@@ -10,8 +10,12 @@ def power_sum(X, N, num=1):
 
 def main ():
     X = int(stdin.readline())
-    N = int(stdin.readline())
-    R = power_sum(X, N)
-    print(R)
+    while X:
+        N = int(stdin.readline())
+        R = power_sum(X, N)
+        print(R)
+        X = int(stdin.readline())
 
 main()
+
+

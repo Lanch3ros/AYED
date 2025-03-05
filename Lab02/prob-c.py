@@ -12,9 +12,10 @@ def hadamard_check(matrix, n):
 
 def main():
     n = int(stdin.readline().strip())
+    if n == 1: 
+        return print("Hadamard" if stdin.readline().strip() == "T" else "No Hadamard")
     if not is_power_of_two(n):
-        print("Imposible")
-        return
+        return print("Imposible")
     elements = stdin.readline().strip().split()
     matrix = [[elements[i * n + j] == 'T' for j in range(n)] for i in range(n)]    
     print(hadamard_check(matrix, n))
